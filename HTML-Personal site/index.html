@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+  <style media="screen">
+    table {
+      background-color: #f3f3f3 margin: 0;
+      padding: 0;
+    }
+
+    td {
+      padding: 20
+    }
+
+
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      display: block;
+      width: 50%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(105, 82, 161);
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      width: 100%;
+    }
+
+    .text {
+      white-space: nowrap;
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    body {
+     font-family: 'Roboto', sans-serif;
+    }
+
+    xample
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+a:hover{
+  text-shadow: 12px
+}
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td><img src="/Users/joaovieira1/Documents/Web development/HTML-Personal site/images/circle-cropped.png" alt=""></td>
+      <td>
+        <h1>João Vieira</h1>
+        <p><em>Micro and Nanotechnologies</em>
+          <a href="https://www.fct.unl.pt/">FCT/UNL</a></p>
+        <p><em>Junior systems engineer</em> <a href="https://www.indracompany.com/pt-br/indra"> Indra Sistemas</a></p>
+      </td>
+    </tr>
+  </table>
+  
+  <hr>
+  <h3>About:</h3>
+  <hr>
+
+
+
+<br>
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Nanotech')">Nanotech</button>
+    <button class="tablinks" onclick="openCity(event, 'IT')">IT</button>
+    <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="Nanotech" class="tabcontent">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <img src="/Users/joaovieira1/Documents/Web development/HTML-Personal site/images/vector_horizontal.jpg" alt="INL" class="image">
+      <div class="overlay">
+        <div class="text"><a href="http://hdl.handle.net/10362/91168", style="color:white"> Master thesis</a></div>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <br>
+    <div class="container">
+      <img src="https://www.mdpi.com/img/journals/applsci-logo.png?1693b1ae19024e2e" alt="Applied Sciences" class="image">
+      <div class="overlay">
+        <div class="text"><a href="https://www.mdpi.com/2076-3417/10/4/1200", style="color:white"> Journal Article</a></div>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div id="IT" class="tabcontent">
+    <br>
+    <br>
+    <h3>IT Jobs</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div id="Interests" class="tabcontent">
+    <br>
+    <br>
+    <h3>Interests</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+
+
+
+</body>
+
+
+<script type="text/javascript">
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+</html>
